@@ -22,27 +22,27 @@ public class CLIApp {
 
             buttonStatus = model.getButtonStatus();
             System.out.print("Not used characters: ");
-            for(int i=0; i<buttons.length; i++){  // Show all characters that not used in guessing yet
-                if(buttonStatus.get(buttons[i]) == 0){
-                    System.out.print(buttons[i]+" ");
+            for (Character button : buttons) {  // Show all characters that not used in guessing yet
+                if (buttonStatus.get(button) == 0) {
+                    System.out.print(button + " ");
                 }
             }
             System.out.print("\nNot contained characters: ");
-            for(int i=0; i<buttons.length; i++){  // Show all guessed characters that not contained in the equation
-                if(buttonStatus.get(buttons[i]) == 1){
-                    System.out.print(buttons[i]+" ");
+            for (Character button : buttons) {  // Show all guessed characters that not contained in the equation
+                if (buttonStatus.get(button) == 1) {
+                    System.out.print(button + " ");
                 }
             }
             System.out.print("\nContained characters: ");
-            for(int i=0; i<buttons.length; i++){  // Show all guessed characters that contained in the equation but in wrong place
-                if(buttonStatus.get(buttons[i]) == 2){
-                    System.out.print(buttons[i]+" ");
+            for (Character button : buttons) {  // Show all guessed characters that contained in the equation but in wrong place
+                if (buttonStatus.get(button) == 2) {
+                    System.out.print(button + " ");
                 }
             }
             System.out.print("\nCorrect characters: ");
-            for(int i=0; i<buttons.length; i++){  // Show all correctly guessed characters
-                if(buttonStatus.get(buttons[i]) == 3){
-                    System.out.print(buttons[i]+" ");
+            for (Character button : buttons) {  // Show all correctly guessed characters
+                if (buttonStatus.get(button) == 3) {
+                    System.out.print(button + " ");
                 }
             }
 
